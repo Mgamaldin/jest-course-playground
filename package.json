@@ -1,0 +1,31 @@
+{
+  "name": "jest-course-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch:test":"jest --watchAll"
+  },
+  "jest": {
+    "collectCoverage":true,
+    "collectCoverageFrom":[
+      "*.js"
+    ],
+    "reporters": [
+      "default",
+      [
+        "./node_modules/jest-html-reporter",
+        {
+          "pageTitle": "Test Report"
+        }
+      ]
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "jest-html-reporter": "^3.4.1"
+  }
+}

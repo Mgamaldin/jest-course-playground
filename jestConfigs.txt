@@ -1,0 +1,24 @@
+for Jest-HTML-Report---->
+
+//Add node package for jest-html-reporter using the below command.
+npm install --save-dev jest-html-reporter
+
+//Now add Jest configuration for the reporter in the package.json file of the node project
+"jest": {
+   "reporters": [
+     "default",
+     [
+       "./node_modules/jest-html-reporter",
+       {
+         "pageTitle": "Test Report"
+       }
+     ]
+   ]
+ }
+
+ //For test Coverage
+ //Jest configuration needs to be added in the package.json file Add the configuration as shown below:
+
+"jest": {
+     "collectCoverage":true
+   }
